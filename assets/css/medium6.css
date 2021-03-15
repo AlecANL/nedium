@@ -1,0 +1,132 @@
+@font-face {
+  font-family: character-light;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: character-dark;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --soft-gray: rgba(0, 0, 0, 0.514);
+  --gray: #f2f2f2;
+}
+body {
+  font-family: charter-light;
+  margin: 0;
+}
+img {
+  max-inline-size: 100%;
+}
+h1 {
+  font-size: 24px;
+  margin-block-start: 80px;
+  margin-block-end: 16px;
+}
+p span {
+  font-size: 18px;
+  color: var(--soft-gray);
+}
+p {
+  margin-block: 40px;
+  font-size: 21px;
+}
+.wrapper {
+  max-inline-size: 680px;
+  margin: auto;
+}
+h3 {
+  counter-increment: titleNumber;
+  font-size: 21px;
+}
+
+h3::before {
+  content: counter(titleNumber) '. ';
+}
+ul {
+  padding: 0;
+  margin-inline: 16px;
+  margin-block: 40px;
+}
+ul li {
+  font-size: 21px;
+  line-height: 32px;
+  margin-block-end: 24px;
+}
+ul li span {
+  text-decoration: underline;
+}
+pre {
+  padding-inline: 24px;
+  padding-block: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: var(--gray);
+  overflow: auto;
+}
+
+.main-content {
+  margin-inline: 16px;
+}
+.counter-list {
+  list-style: none;
+}
+.counter-list li {
+  position: relative;
+  counter-increment: counterList;
+  padding-inline-start: 50px;
+  /* padding-inline-start: 100px; */
+}
+.counter-list li::before {
+  position: absolute;
+  content: counter(counterList);
+  display: inline-block;
+  box-sizing: border-box;
+  inline-size: 40px;
+  block-size: 40px;
+  margin-inline: -50px;
+  padding: 5px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 100px;
+  text-align: center;
+}
+blockquote {
+  margin-inline: 16px;
+  position: relative;
+}
+blockquote p {
+  font-size: 14px;
+  font-style: italic;
+  padding-inline-start: 16px;
+}
+
+blockquote::before {
+  position: absolute;
+  content: '';
+  display: block;
+  inline-size: 4px;
+  block-size: 128px;
+  background-color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  p {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  p span {
+    font-size: 32px;
+  }
+  blockquote p {
+    font-size: 21px;
+  }
+}

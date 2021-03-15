@@ -1,0 +1,243 @@
+:root {
+  --soft-black: #212121;
+  --soft-gray: #c4c4c4;
+  --light-gray: #e5e5e5;
+  --txt-color: #424242;
+  --light-txt-color: #616161;
+  --footer-color: #212429;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--light-txt-color);
+  font-weight: 400;
+}
+h1 {
+  font-size: 16px;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  color: var(--light-txt-color);
+  font-weight: 700;
+}
+details {
+  color: var(--light-txt-color);
+}
+img {
+  max-inline-size: 100%;
+}
+ol li,
+ul li {
+  margin-block: 16px;
+}
+hr {
+  margin-block: 64px;
+}
+pre {
+  margin-block-start: 16px;
+  margin-block-end: 40px;
+  padding-block: 40px;
+  padding-inline: 40px;
+  background-color: var(--light-gray);
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.section-content img {
+  display: block;
+}
+.section-content h3 {
+  margin-block: 16px;
+}
+.section-content h2 {
+  margin-block-end: 40px;
+  font-weight: normal;
+  color: var(--soft-black);
+  font-size: 32px;
+}
+.section-content p {
+  margin-block: 16px;
+  line-height: 24px;
+}
+.main-title {
+  font-size: 32px;
+}
+.main-description {
+  margin-block-end: 50px;
+  line-height: 24px;
+}
+.header {
+  inline-size: 280px;
+  block-size: 472px;
+  border-inline-start: 4px solid var(--soft-gray);
+  padding-inline-start: 16px;
+}
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+.main-content {
+  padding: 20px;
+}
+.quote {
+  margin-inline: 0;
+  margin-block: 40px;
+  padding-inline-start: 16px;
+  border-inline-start: 4px solid var(--soft-black);
+  font-size: 16px;
+}
+.quote p {
+  margin-block-end: 16px;
+  line-height: 32px;
+}
+.quote p span {
+  color: var(--light-txt-color);
+}
+.quote p span::before {
+  content: '- ';
+}
+.third-section h3,
+.box-model-content h3 {
+  margin-block-start: 20px;
+}
+.box-model-content h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--txt-color);
+}
+.section-contact p {
+  margin-block: 40px;
+}
+.section-contact p a {
+  color: var(--txt-color);
+  text-decoration: underline;
+}
+.section-contact h3 {
+  font-weight: normal;
+  /* text-align: center; */
+  font-size: 24px;
+}
+form {
+  position: relative;
+  margin-block-end: 80px;
+}
+
+.form-field {
+  inline-size: 100%;
+  block-size: 48px;
+  margin-block: 10px;
+  padding-inline-start: 20px;
+  border-radius: 90px;
+  border: 1px solid var(--light-txt-color);
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+button {
+  inline-size: 100%;
+  inset-inline-end: 250px;
+  block-size: 52px;
+  border-radius: 90px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--soft-black);
+  color: #ffff;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+footer {
+  inline-size: 100%;
+  block-size: 170px;
+  background-color: var(--footer-color);
+  text-align: center;
+}
+footer p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding-block-start: 48px;
+}
+footer i {
+  color: #fff;
+  margin-inline: 10px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 60px;
+  }
+  .main-description {
+    margin-block-start: 16px;
+    margin-block-end: 96px;
+  }
+  .quote {
+    margin-block: 80px;
+    font-size: 24px;
+  }
+  .third-section h3,
+  .box-model-content h3 {
+    margin-block-start: 40px;
+  }
+
+  footer p {
+    font-size: 32px;
+  }
+}
+
+.bullets-lists {
+  text-align: center;
+  margin-block: 16px;
+}
+.bullets-lists a {
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-inline: 8px;
+  background-color: #616161;
+}
+.slide-content {
+  margin-block: 50px;
+  margin-inline: 16px;
+}
+.slider-container {
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-item img {
+  margin: 0;
+  display: inline-block;
+  inline-size: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+@media screen and (min-width: 1000px) {
+  .form-field {
+    inline-size: 35%;
+    margin-inline-end: 10px;
+  }
+  button {
+    position: absolute;
+    inset-block-start: 9px;
+    inset-inline-end: 230px;
+    width: 15%;
+  }
+}

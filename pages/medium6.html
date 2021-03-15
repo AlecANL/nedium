@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/medium6.css" />
+    <title>Medium6 | HTML CSS</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="main-content">
+          <h1>Top 10 User Frustrations on Web</h1>
+          <p>
+            <span>And how to fix (most of) them</span>
+          </p>
+          <p>
+            What are the most frustrating things that you face on the web today?
+            Vitaly Friedman of Smashing Magazine did a great job summarizing all
+            key user frustrations in 2020.
+          </p>
+          <img src="../assets/img/image1.png" alt="image 1" />
+          <p>
+            In this article, I want to overview my list of the ten most critical
+            frustrations and share practical tips on how to overcome them:
+          </p>
+          <h3>Small-sized text</h3>
+          <p>
+            Despite the recent popularity of video format, most information on
+            the web is still in written form. That’s why
+          </p>
+          <p>
+            <span>
+              In this article, I want to overview my list of the ten most
+              critical frustrations and share practical tips on how to overcome
+              them:
+            </span>
+          </p>
+          <p>
+            Here are a few practical tips for you to follow when working with
+            text:
+          </p>
+          <ul>
+            <li>
+              Font size should be <span>minimum 16px.</span> 16px for body text
+              is a good place to start but remember that the bigger the screen
+              size, the larger the text.
+            </li>
+            <li>
+              Aim for line-height to be 1.5em or 1.6em for optimal readability.
+            </li>
+            <li>Always view your designs on an actual device.</li>
+          </ul>
+          <h3>Tiny click targets</h3>
+          <p>
+            The smaller the interactive elements (links, buttons, and other UI
+            controls), the more mistakes the user will make when interacting
+            with your website.
+          </p>
+          <p>
+            <span>Do not play ‘hunt a button’ game with your visitors.</span>
+          </p>
+          <img src="../assets/img/image2.png" alt="image 2" />
+          <p>Here are a few good tips:</p>
+          <ul>
+            <li>
+              Touch targets should be finger-friendly. The average size of the
+              touch target should be 9mm x 9mm. Material Design states that
+              touch targets should be at least 48 x 48 px.
+            </li>
+            <li>
+              Add good padding surrounding touch targets. Microsoft guidelines
+              recommend 10mm paddings between touch targets.
+            </li>
+          </ul>
+          <h3>Not working “Back” button</h3>
+          <p>
+            User control and freedom is one of Jakob Nielsen’s 10 usability
+            heuristic of user interface design. It says:
+          </p>
+          <p>
+            <span
+              >Users need a clearly marked “emergency exit” to leave the
+              unwanted action without having to go through an extended
+              process.</span
+            >
+          </p>
+          <p>
+            And the Back button in a browser is this emergency exit. If you are
+            afraid that users will lose their data by clicking the Back button,
+            it’s better to warn users about that by displaying a message “Your
+            work will be lost"on the Back button click.
+          </p>
+          <pre>
+window.addEventListener("beforeunload", function(event) { ... });
+
+window.onbeforeunload = function(event) { 
+
+// notify about potential data loss here
+
+};
+ 
+          </pre>
+          <ul class="counter-list">
+            <li>
+              Font size should be <span>minimum 16px.</span> 16px for body text
+              is a good place to start but remember that the bigger the screen
+              size, the larger the text.
+            </li>
+            <li>
+              Aim for line-height to be 1.5em or 1.6em for optimal readability.
+            </li>
+            <li>Always view your designs on an actual device.</li>
+          </ul>
+          <blockquote>
+            <p>
+              And the Back button in a browser is this emergency exit. If you
+              are afraid that users will lose their data by clicking the Back
+              button, it’s better to warn users about that by displaying a
+              message “Your work will be lost"on the Back button click.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

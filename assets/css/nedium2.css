@@ -1,0 +1,236 @@
+:root {
+  --main-bg-color: #251f24;
+  --just-white: #fff;
+  --soft-gray: #a5a3a5;
+  --light-gray: #3a3539;
+  --dark-gray: #314755;
+  --dark-blue: #26a0da;
+}
+body {
+  margin: 0;
+}
+
+.hero {
+  inline-size: 100%;
+  block-size: 350px;
+  background-image: linear-gradient(
+    to right,
+    var(--dark-gray) 38.63%,
+    var(--dark-blue) 102.2%
+  );
+}
+body {
+  background-color: var(--main-bg-color);
+  font-family: system-ui;
+  color: var(--just-white);
+}
+a {
+  text-decoration: none;
+  color: var(--soft-gray);
+}
+p {
+  color: var(--soft-gray);
+}
+img {
+  max-inline-size: 100%;
+}
+/* .dom,
+.css {
+  inline-size: 636px;
+} */
+
+.section-content ul li,
+.section-content ol li {
+  color: var(--soft-gray);
+}
+
+pre {
+  background-color: var(--light-gray);
+  padding-inline: 40px;
+  padding-block: 40px;
+  line-height: 24px;
+  font-family: monospace;
+  font-size: 17px;
+  border: 8px solid #5551ff;
+  border-radius: 8px;
+  box-shadow: -10px 10px 0 0 #87a6e3;
+  margin-block-end: 40px;
+}
+.section-content h3 {
+  counter-increment: titleList;
+}
+.section-content h3::before {
+  content: counter(titleList) '. ';
+}
+.main {
+  /* border: 1px solid red; */
+}
+.wrapper {
+  /* border: 1p
+  x solid blue; */
+  max-inline-size: 902px;
+  margin: auto;
+}
+.section-content {
+  /* border: 1px solid green; */
+  padding-inline: 16px;
+}
+h1 {
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+}
+hr {
+  margin-block: 40px;
+}
+h2 {
+  margin-block: 40px;
+}
+h3 {
+  margin-block: 16px;
+}
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+}
+pre {
+  overflow: auto;
+}
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  padding-block: 24px;
+  padding-inline: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  background: var(--light-gray);
+  border-radius: 5px;
+}
+blockquote p {
+  color: var(--just-white);
+}
+blockquote p span::before {
+  content: '- ';
+}
+header {
+  position: absolute;
+  inline-size: 188px;
+  inset-inline-start: -230px;
+  inset-block-start: 40px;
+}
+.header {
+  position: sticky;
+  inset-block-start: 0;
+}
+.header-content {
+  position: relative;
+}
+.bullets-lists {
+  text-align: center;
+  margin-block: 16px;
+}
+.bullets-lists a {
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-inline: 8px;
+  background-color: #616161;
+}
+.slide-content {
+  margin-block: 50px;
+  margin-inline: 16px;
+}
+.slider-container {
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-item img {
+  margin: 0;
+  display: inline-block;
+  inline-size: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.section-contact p {
+  margin-block: 40px;
+}
+
+.section-contact p a {
+  color: #157efb;
+  text-decoration: underline;
+}
+.section-contact h3 {
+  font-weight: normal;
+  /* text-align: center; */
+  font-size: 24px;
+}
+form {
+  position: relative;
+  margin-block-end: 80px;
+}
+
+.form-field {
+  inline-size: 100%;
+  block-size: 48px;
+  margin-block: 10px;
+  padding-inline-start: 20px;
+  border-radius: 8px;
+  border: 1px solid#fff;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+}
+.form-field::placeholder {
+  color: #fff;
+}
+button {
+  inline-size: 100%;
+  inset-inline-end: 250px;
+  block-size: 52px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #157efb;
+  color: #fff;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+footer {
+  inline-size: 100%;
+  block-size: 170px;
+  background-color: #fff;
+  text-align: center;
+}
+footer p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding-block-start: 48px;
+}
+.section-contact {
+  text-align: initial;
+}
+footer i {
+  color: #000;
+  margin-inline: 10px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  footer p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  form {
+    padding-inline: 150px;
+  }
+}
